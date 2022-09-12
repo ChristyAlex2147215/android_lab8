@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#5C52CC57"
+    android:orientation="vertical">
+
+    <!-- Text to be displayed inside the Fragment -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/fragment1_text1"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="297dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30sp"
+        android:paddingLeft="50dp"
+        android:text="Sports Wear"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="6dp"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="right"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="48dp">
+            <!--for all of the items listed-->
+            <!--(1)-->
+            <!--layout1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--for each row of items-->
+                <!--(2)-->
+                <!--layout2-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal">
+                    <!--for aligning info inside each box-->
+                    <!--(3)-->
+                    <LinearLayout
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image1"
+                            android:layout_width="184dp"
+                            android:layout_height="221dp"
+                            android:background="@color/lgrey"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/image1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Black Tshirt with white logo"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TREX" />
+                        <!--for prife and add to cart links-->
+                        <!--(4)-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="$7"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="50dp"
+                                android:text="Add to cart"
+                                android:textColor="@color/violet"
+                                android:textSize="20sp" />
+                            <!--(3)-->
+                        </LinearLayout>
+                        <!--(2)-->
+                    </LinearLayout><!--end of info inside a box-->
+                    <!--(1)-->
+                    <LinearLayout
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="184dp"
+                            android:layout_height="221dp"
+                            android:background="@color/dgrey"
+                            android:src="@drawable/image2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Black Tshirt with white logo"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TREX" />
+                        <!--for prife and add to cart links-->
+                        <!--(4)-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="$7"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="50dp"
+                                android:text="Add to cart"
+                                android:textColor="@color/violet"
+                                android:textSize="20sp" />
+                            <!--(3)-->
+                        </LinearLayout>
+                        <!--(2)-->
+                    </LinearLayout>
+                </LinearLayout>
+                <!--for second  image in first row-->
+                <!--second row of items-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <!--for aligning info inside each box-->
+                    <!--(3)-->
+                    <LinearLayout
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="184dp"
+                            android:layout_height="221dp"
+                            android:background="@color/dgrey"
+                            android:src="@drawable/image3" />
+
+                        <TextView
+                            android:id="@+id/image3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Black Tshirt with white logo"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TREX" />
+                        <!--for prife and add to cart links-->
+                        <!--(4)-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="$7"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="50dp"
+                                android:text="Add to cart"
+                                android:textColor="@color/violet"
+                                android:textSize="20sp" />
+                            <!--(3)-->
+                        </LinearLayout>
+                        <!--(2)-->
+                    </LinearLayout><!--end of info inside a box-->
+                    <!--(1)-->
+                    <LinearLayout
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="184dp"
+                            android:layout_height="221dp"
+                            android:background="@color/dgrey"
+                            android:src="@drawable/image4" />
+
+                        <TextView
+                            android:id="@+id/image4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Black Tshirt with white logo"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TREX" />
+                        <!--for prife and add to cart links-->
+                        <!--(4)-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="$7"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="50dp"
+                                android:text="Add to cart"
+                                android:textColor="@color/violet"
+                                android:textSize="20sp" />
+                            <!--(3)-->
+                        </LinearLayout>
+                        <!--(2)-->
+                    </LinearLayout>
+                </LinearLayout>
+                <!--third row-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <!--for aligning info inside each box-->
+                    <!--(3)-->
+                    <LinearLayout
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="184dp"
+                            android:layout_height="221dp"
+                            android:background="@color/dgrey"
+                            android:src="@drawable/image1" />
+
+                        <TextView
+                            android:id="@+id/image5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Black Tshirt with white logo"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TREX" />
+                        <!--for prife and add to cart links-->
+                        <!--(4)-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="$7"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="50dp"
+                                android:text="Add to cart"
+                                android:textColor="@color/violet"
+                                android:textSize="20sp" />
+                            <!--(3)-->
+                        </LinearLayout>
+                        <!--(2)-->
+                    </LinearLayout><!--end of info inside a box-->
+                    <!--(1)-->
+                    <LinearLayout
+                        android:layout_width="207dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="184dp"
+                            android:layout_height="221dp"
+                            android:background="@color/dgrey"
+                            android:src="@drawable/image4" />
+
+                        <TextView
+                            android:id="@+id/image6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Black Tshirt with white logo"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TREX" />
+                        <!--for prife and add to cart links-->
+                        <!--(4)-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="10dp"
+                                android:text="$7"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="50dp"
+                                android:text="Add to cart"
+                                android:textColor="@color/violet"
+                                android:textSize="20sp" />
+                            <!--(3)-->
+                        </LinearLayout>
+                        <!--(2)-->
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout><!--for all the items-->
+        </ScrollView>
+
+</LinearLayout>
